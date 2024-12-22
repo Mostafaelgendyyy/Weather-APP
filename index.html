@@ -1,0 +1,206 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg p-5">
+      <div class="container-fluid">
+        <div class="imageLogo text-white d-flex">
+          <img src="img/logo.png" alt="" />
+          <div class="captionLogo ms-3">
+            <h1 id="h1Id">Weather</h1>
+            <span class="text-secondary">tagline goes here</span>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse w-auto position-relative"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0 position-absolute end-0 p-3">
+            <li class="nav-item">
+              <a class="nav-link active linkLogo" aria-current="page" href="#" id="home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="cameras">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="photo">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="homeHeader" class="block"> 
+      <div class="container py-5 w-75">
+        <div class="search position-relative rounded-pill">
+          <input
+            type="text"
+            placeholder="Find Your Locations..."
+            class="form-control rounded-pill py-3 searchInput"
+            id="searchId"
+          />
+          <button
+            class="findBtn btn btn-primary position-absolute rounded-pill p-2 px-5"
+            id="findID"
+          >
+            Find
+          </button>
+        </div>
+        <div class="row my-5" id="rowId"></div>
+      </div>
+      <div class="loading-spinner" id="loadingId"></div>
+    </header>
+    <section id="contactSection" class="contactSection">
+      <div class="container my-3 w-75">
+        <div class="position-relative rounded-pill searchContact">
+          <div class="w-100  py-3 divContact rounded-pill">
+            
+          </div>
+          <div class="spanContact position-absolute">
+            <a href="#" id="contactHome">Home</a>
+            <i class="fa-solid fa-arrow-right mx-2"></i>
+            <span class="text-white">Contact</span>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div
+            class="col-md-5 companyName rounded-3 p-4 d-flex align-items-end mt-5"
+          >
+            <div class="companyCaption">
+              <div class="d-flex">
+                <div>
+                  <i class="fa-solid fa-location-dot me-3 fs-4"></i>
+                </div>
+                <span
+                  >Company Name INC.<br />
+                  2803 Avenue Street, Los Angeles</span
+                >
+              </div>
+              <div class="d-flex justify-content-between mt-4">
+                <div>
+                  <i class="fa-solid fa-phone me-2"></i>
+                  <span>+2 01067764726</span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-envelope ms-4 me-2"></i>
+                  <span>mahmoudelksass@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 p-5">
+            <h2 class="text-white mb-3">Contact Us</h2>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+              consectetur inventore ducimus, facilis, numquam id soluta omnis
+              eius recusandae nesciunt vero repellat harum cum. Nisi facilis
+              odit hic, ipsum sed!
+            </p>
+            <div class="contactDetails position-relative">
+              <div class="d-flex">
+                <input
+                  type="text"
+                  class="form-control rounded-pill w-50"
+                  placeholder="Your Name..."
+                />
+                <input
+                  type="email"
+                  class="form-control rounded-pill w-50 ms-3"
+                  placeholder="Your Email..."
+                />
+              </div>
+              <div class="d-flex">
+                <input
+                  type="text"
+                  class="form-control rounded-pill w-50 mt-3"
+                  placeholder="Company Name..."
+                />
+                <input
+                  type="text"
+                  class="form-control rounded-pill w-50 mt-3 ms-3"
+                  placeholder="Website..."
+                />
+              </div>
+              <textarea
+                name=""
+                class="form-control my-3"
+                placeholder="Message..."
+                id=""
+                cols="30"
+                rows="7"
+              ></textarea>
+              <button class="btn position-absolute" id="submitId">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footerId">
+      <div class="container w-75 py-5">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <div class="position-relative">
+                <input
+                  type="text"
+                  placeholder="Enter Your Email To Subscribe..."
+                  class="form-control rounded-pill py-3 subscribeInput"
+                />
+                <button
+                  class="btn btn-primary position-absolute rounded-pill p-2 px-3"
+                  id="subscribeId"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 offset-1">
+            <div class="iconHome">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-google-plus-g"></i>
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+          </div>
+          <div class="col-md-12 pt-4 footerP">
+            <p>
+              Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
